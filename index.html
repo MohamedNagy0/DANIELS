@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This website for revasion" />
+    <meta name="author" content="Mohamed Nagy" />
+    <!-- Animation Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon icon -->
+    <link rel="icon" href="./img/code-solid (1).svg" />
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- BootStrap Css  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--  Main css link -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Route Bootstrap Exam</title>
+  </head>
+  <body tabindex="0" data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Looding screen -->
+    <div
+      class="lodaing position-fixed top-0 end-0 start-0 bottom-0 d-flex justify-content-center align-items-center bg-transparent"
+    >
+      <div class="top position-absolute top-0 w-100 bg-white"></div>
+      <div class="bottom position-absolute bottom-0 w-100 bg-white"></div>
+      <div class="spinner-border" role="status"></div>
+    </div>
+    <!-- Start Nav -->
+    <nav
+      class="navbar top-0 start-0 end-0 z-3 navbar-expand-lg px-2"
+      id="navbar"
+    >
+      <div class="container-fluid container-md">
+        <span data-aos="fade-right" data-aos-duration="1000">
+          <a
+            class="text-decoration-none h2 fw-bolder text-uppercase h5"
+            href="./index.html"
+            >Route</a
+          >
+        </span>
+        <div
+          class="menu-icon d-flex flex-column gap-1 d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="first rounded-5"></div>
+          <div class="second rounded-5"></div>
+          <div class="third rounded-5"></div>
+        </div>
+        <div
+          class="collapse navbar-collapse overflow-hidden"
+          id="navbarSupportedContent"
+        >
+          <ul
+            data-aos-duration="1000"
+            data-aos="fade-left"
+            class="navbar-nav nav-underline fs-13 ms-auto d-flex justify-content-center align-items-center text-capitalize gap-lg-5"
+          >
+            <li class="nav-item position-relative home-special">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#home-section"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#about-section"
+                >about</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#services-section"
+                >services</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#works-section"
+                >works</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#clients-section"
+              >
+                Clients</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#team-section"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item position-relative">
+              <a
+                class="nav-link border-bottom-0 fw-normal px-0"
+                aria-current="page"
+                href="#contact-section"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Start Home -->
+    <header
+      class="home-section vh-100 d-flex justify-content-center align-items-center"
+      id="home-section"
+    >
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="home-caption mt-5 text-white d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="h2 fw-bolder">Hello</p>
+            <h1
+              class="fw-light mb-2 text-white overflow-hidden text-center pe-1 position-relative"
+            >
+              <span> I Am </span>
+              <span class="fw-normal d-inline-block overflow-hidden py-2"
+                >Route</span
+              ><span class="fw-normal d-inline-block overflow-hidden py-2"
+                >Developer</span
+              ><span class="fw-normal d-inline-block overflow-hidden py-2"
+                >Designer</span
+              ><span class="fw-normal d-inline-block overflow-hidden py-2"
+                >Freelancer</span
+              >
+            </h1>
+            <div
+              class="social-links mt-4 d-flex justify-content-center align-items-center gap-1"
+            >
+              <a
+                class="text-decoration-none bg-black bg-opacity-25 p-2 rounded-circle text-white"
+                target="_blank"
+                href="https://facebook.com/"
+              >
+                <i class="fa-fw fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                class="text-decoration-none bg-black bg-opacity-25 p-2 rounded-circle text-white"
+                target="_blank"
+                href="https://twitter.com/"
+              >
+                <i class="fa-fw fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                class="text-decoration-none bg-black bg-opacity-25 p-2 rounded-circle text-white"
+                target="_blank"
+                href="https://linkedin.com/"
+              >
+                <i class="fa-fw fa-brands fa-linkedin-in"></i>
+              </a>
+              <a
+                class="text-decoration-none bg-black bg-opacity-25 p-2 rounded-circle text-white"
+                target="_blank"
+                href="https://behance.com/"
+              >
+                <i class="fa-fw fa-brands fa-behance"></i>
+              </a>
+              <a
+                class="text-decoration-none bg-black bg-opacity-25 p-2 rounded-circle text-white"
+                target="_blank"
+                href="https://youtube.com/"
+              >
+                <i class="fa-fw fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Home -->
+
+    <!-- Start Main  -->
+    <main>
+      <!-- Start About -->
+      <section class="about-section my-5" id="about-section">
+        <div class="container py-4 px-3">
+          <div
+            class="row p-lg-2"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-duration="1000"
+          >
+            <div class="col-lg-5 p-3">
+              <div class="about-img position-relative ps-3 py-3">
+                <img
+                  class="w-100"
+                  src="./img/hero.jpg"
+                  alt="Mina Kadis Profile Photo"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 mt-5 mt-md-4">
+              <div class="about-caption">
+                <h2 class="fw-800 h1 dark-color mb-1">About Me.</h2>
+                <p class="light-color fs-14 fw-light">
+                  UI / UX DESIGNER & WEB DEVELOPER
+                </p>
+                <p class="light-color fw-normal fs-15">
+                  I am <span class="fw-bold">Route</span> Lorem Ipsum is simply
+                  dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry's standard dummy text ever It has
+                  survived not only five centuries, but also the leap into
+                  electronic but also the leap into electronic typesetting,
+                  remaining essentially unchanged. It was popularised in the
+                  1960s with the release of Letraset sheets containing
+                </p>
+                <div
+                  class="rating d-flex flex-column justify-content-center align-items-center gap-3"
+                >
+                  <div
+                    class="progress-parent mt-3 w-100 d-flex flex-column gap-4"
+                  >
+                    <div
+                      class="progress-chiled mt-2 bg-white text-white w-100 rounded-2"
+                    >
+                      <div
+                        class="chiled rounded-1 h-100 d-flex justify-content-between align-items-center dark-bg px-3 fs-13"
+                      >
+                        <span>Web Design</span>
+                        <span>95%</span>
+                      </div>
+                    </div>
+                    <div
+                      class="progress-chiled mt-2 bg-white text-white w-100 rounded-2"
+                    >
+                      <div
+                        class="chiled rounded-1 h-100 d-flex justify-content-between align-items-center dark-bg px-3 sec fs-13"
+                      >
+                        <span>Branding</span>
+                        <span>80%</span>
+                      </div>
+                    </div>
+                    <div
+                      class="progress-chiled mt-2 bg-white text-white w-100 rounded-2"
+                    >
+                      <div
+                        class="chiled rounded-1 h-100 d-flex justify-content-between align-items-center dark-bg px-3 third fs-13"
+                      >
+                        <span>Development</span>
+                        <span>90%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-btn mt-5 py-2 pb-5">
+                  <a
+                    class="text-white tr-350 main-border dark-bg fs-13 text-decoration-none px-4 py-2 rounded-2"
+                    href="./pdf/MohamedNagySolimanAli.pdf"
+                    download
+                    >Download C.V</a
+                  >
+                  <a
+                    class="px-4 py-2 fs-13 main-border tr-350 text-decoration-none rounded-2 dark-color"
+                    href="#contact-section"
+                    >Contact Me</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+
+      <!-- Start Services -->
+      <section
+        class="services-section my-5 py-5 light-bg"
+        id="services-section"
+      >
+        <div class="container-fluid container-md px-3 px- py-4">
+          <div
+            class="titel dark-color d-flex justify-content-center align-items-center py-4 text-center"
+          >
+            <h2 class="my-3 z-1 position-relative mb-0 fw-900">Services.</h2>
+          </div>
+          <div class="row g-4 mt-3" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid fa-laptop tr-500 fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color h5 mb-0">Web Design</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid tr-500 fa-bullhorn fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color fs-18 mb-0">Branding</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid tr-500 fa-umbrella fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color fs-18 mb-0">Development</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid tr-500 fa-gem fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color fs-18 mb-0">Creative Design</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid tr-500 fa-display fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color fs-18 mb-0">Fully Responsive</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-2 px-3">
+              <div
+                class="services-card px-md-3 text-center bg-white py-5 shadow-sm rounded-2 d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="services-icon tr-500 p-4 rounded-circle light-bg d-flex justify-content-center align-items-center d-inline-block"
+                >
+                  <i class="fa-solid tr-500 fa-camera fa-xl dark-color"></i>
+                </div>
+                <h3 class="fw-800 dark-color fs-18 mb-0">Retina Ready</h3>
+                <p class="light-color mb-0 fs-14">
+                  Lorem Ipsum is simply dummy text of the Lorem Ipsum has been
+                  the industry's standard dummy text ever
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services -->
+
+      <!-- Start Portfolio -->
+      <section class="works-section my-5 pt-3 pb-5" id="works-section">
+        <div class="container-fluid container-lg px-3 px-xl-5">
+          <div
+            class="titel dark-color d-flex justify-content-center align-items-center py-5 text-center"
+          >
+            <h2 class="z-1 position-relative mb-0 fw-900">Portfolio.</h2>
+          </div>
+          <ul
+            class="nav nav-underline d-flex justify-content-center align-items-center text-capitalize gap-4 mb-5 border-0"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item position-relative" role="presentation">
+              <button
+                class="nav-link active text-black border-bottom-0 fw-bold fs-6 fw-bold fs-6"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item position-relative" role="presentation">
+              <button
+                class="nav-link text-black border-bottom-0 fw-bold fs-6 fw-bold fs-6"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Brand
+              </button>
+            </li>
+            <li class="nav-item position-relative" role="presentation">
+              <button
+                class="nav-link text-black border-bottom-0 fw-bold fs-6"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                Design
+              </button>
+            </li>
+            <li class="nav-item position-relative" role="presentation">
+              <button
+                class="nav-link text-black border-bottom-0 fw-bold fs-6"
+                id="graphic-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#graphic-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="graphic-tab-pane"
+                aria-selected="false"
+              >
+                Graphic
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content"
+            id="myTabContent"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="tab-pane animate__animated animate__zoomIn show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/1.jpg"
+                      alt=" White charger ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/2.jpg"
+                      alt=" White Book ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/3.jpg"
+                      alt=" White bord ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/4.jpg"
+                      alt=" Bulb with yellow wire to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/5.jpg"
+                      alt=" A set of different colored rulers ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-6 col-lg-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/6.jpg"
+                      alt=" A set of office tools ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane animate__animated animate__zoomIn"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/4.jpg"
+                      alt="Bulb with yellow wire ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/6.jpg"
+                      A
+                      set
+                      of
+                      office
+                      tools=" A set of office tools ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane animate__animated animate__zoomIn"
+              id="contact-tab-pane"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/2.jpg"
+                      alt=" White Book ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/5.jpg"
+                      alt=" A set of different colored rulers ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane animate__animated animate__zoomIn"
+              id="graphic-tab-pane"
+              role="tabpanel"
+              aria-labelledby="disabled-tab"
+              tabindex="0"
+            >
+              <div class="row g-3">
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/1.jpg"
+                      alt=" White charger ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/3.jpg"
+                      alt=" White bord ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+                <div class="col-md-4 px-3">
+                  <figure class="works-card position-relative">
+                    <img
+                      class="w-100"
+                      src="./img/portfolio/5.jpg"
+                      alt=" A set of different colored rulers ready to buy! "
+                    />
+                    <div
+                      class="img-inner tr-500 opacity-0 bg-main p-1 position-absolute top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center"
+                    >
+                      <div
+                        class="inner bg-white w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+                      >
+                        <h3 class="fs-14 tr-500 fw-semibold mb-0">
+                          WEB DESIGN
+                        </h3>
+                        <div
+                          class="icons tr-500 d-flex justify-content-center align-items-center gap-1"
+                        >
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i class="fa-solid fa-sm fa-link"> </i>
+                          </div>
+                          <div
+                            class="social-all-icons tr-500 pointer-event dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                          >
+                            <i
+                              class="fa-solid fa-sm fa-magnifying-glass-plus"
+                            ></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio -->
+
+      <!-- Start Testimonials -->
+      <section
+        class="testimonials-section my-5 py-5 light-bg"
+        id="clients-section"
+      >
+        <div
+          class="titel dark-color d-flex justify-content-center align-items-center py-5 text-center"
+        >
+          <h2 class="z-1 position-relative mb-0 fw-900">Testimonials.</h2>
+        </div>
+        <div
+          class="container text-center pb-5 pt-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            id="carouselExampleCaptions"
+            data-bs-ride="carousel"
+            class="carousel slide d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="carousel-indicators top-100 mt-4">
+              <button
+                type=" button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active rounded-circle mx-2 tr-350"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                class="rounded-circle mx-2 tr-350"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                class="rounded-circle mx-2 tr-350"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="parent">
+                  <img
+                    class="rounded-circle"
+                    src="./img/clients/1.jpg"
+                    alt="Alex Smith Profile photo"
+                  />
+                  <p class="pt-3 light-color">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h3 class="h6 fw-semibold mt-4">Alex Smith</h3>
+                  <h4 class="fw-semibold fs-12">Envato Customer</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="parent">
+                  <img
+                    class="rounded-circle"
+                    src="./img/clients/1.jpg"
+                    alt="Alex Smith Profile photo"
+                  />
+                  <p class="pt-3 light-color">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h3 class="h6 fw-semibold mt-4">Alex Smith</h3>
+                  <h4 class="fw-semibold fs-12">Envato Customer</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="parent">
+                  <img
+                    class="rounded-circle"
+                    src="./img/clients/1.jpg"
+                    alt="Alex Smith Profile photo"
+                  />
+                  <p class="pt-3 light-color">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                  </p>
+                  <h3 class="h6 fw-semibold mt-4">Alex Smith</h3>
+                  <h4 class="fw-semibold fs-12">Envato Customer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials -->
+
+      <!-- Start Numbers -->
+      <section class="numbers-section my-5 py-5" id="numbers-section">
+        <div class="container pb-5">
+          <div class="row gy-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-3 mb-1">
+              <div
+                class="inner gap-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="h2 fw-900 fa-solid fa-people-group"></i>
+                <h2 class="fw-900 dark-color fs-1">850</h2>
+                <span class="fs-15 light-color fw-semibold"
+                  >Happy Customers</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mb-1">
+              <div
+                class="inner gap-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="h2 fw-900 fa-solid fa-thumbs-up"></i>
+                <h2 class="fs-1 fw-900 dark-color">230</h2>
+                <span class="fs-15 light-color fw-semibold"
+                  >Complete Projects</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-3 mb-1">
+              <div
+                class="inner gap-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="h2 fw-900 fa-solid fa-bullhorn"></i>
+                <h2 class="fs-1 fw-900 dark-color">9450</h2>
+                <span class="fs-15 light-color fw-semibold"
+                  >Lines Of Code
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-3 mb-1">
+              <div
+                class="inner gap-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <i class="h2 fw-900 fa-solid fa-cloud-arrow-down"></i>
+                <h2 class="fs-1 fw-900 dark-color">780</h2>
+                <span class="fs-15 light-color fw-semibold"
+                  >Files Downloaded</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ennd Numbers -->
+
+      <!-- Start Our Team -->
+      <section class="team-section my-5 py-5 light-bg" id="team-section">
+        <div class="container-fluid container-md">
+          <div
+            class="titel dark-color d-flex justify-content-center align-items-center py-5 text-center"
+          >
+            <h2 class="z-1 position-relative mb-0 fw-900">Our Team.</h2>
+          </div>
+          <div
+            class="row py-5 gy-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col-md-6 col-lg-4">
+              <div class="team-card">
+                <div class="img position-relative overflow-hidden">
+                  <img
+                    class="w-100 tr-500"
+                    src="./img/2.jpg"
+                    alt="John Doe profile photo"
+                  />
+                  <div
+                    class="icons opacity-0 m-1 position-absolute bottom-0 top-0 start-0 end-0 bg-white d-flex gap-3 justify-content-center align-items-center"
+                  >
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://facebook.com/"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://twitter.com/"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://pinterest.com/"
+                    >
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://linkedin.com/"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="card-caption text-center text-white py-3 rounded-bottom-3"
+                >
+                  <h3 class="mb-1 fs-25 text-white">John Doe</h3>
+                  <h4 class="fw-bold text-white h5 px-lg-5 px-xl-0">
+                    FRONT-END DEVELOPER
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="team-card">
+                <div class="img position-relative overflow-hidden">
+                  <img
+                    class="w-100 tr-500"
+                    src="./img/1.jpg"
+                    alt="Dave Wood profile Photo"
+                  />
+                  <div
+                    class="icons opacity-0 m-1 position-absolute bottom-0 top-0 start-0 end-0 bg-white d-flex gap-3 justify-content-center align-items-center"
+                  >
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://facebook.com/"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://twitter.com/"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://pinterest.com/"
+                    >
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://linkedin.com/"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="card-caption text-center text-white py-3 rounded-bottom-3"
+                >
+                  <h3 class="mb-1 fs-25 text-white">Dave Wood</h3>
+                  <h4 class="fw-bold text-white h5 px-lg-5 px-xl-0">
+                    BACK-END DEVELOPER
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="team-card">
+                <div class="img position-relative overflow-hidden">
+                  <img
+                    class="w-100 tr-500"
+                    src="./img/2.jpg"
+                    alt="Claire Chedd profile photo"
+                  />
+                  <div
+                    class="icons opacity-0 m-1 position-absolute bottom-0 top-0 start-0 end-0 bg-white d-flex gap-3 justify-content-center align-items-center"
+                  >
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://facebook.com/"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://twitter.com/"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://pinterest.com/"
+                    >
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a
+                      class="text-decoration-none tr-500 social-all-icons dark-bg border border-1 text-white rounded-circle d-flex justify-content-center align-items-center"
+                      target="_blank"
+                      href="https://linkedin.com/"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="card-caption text-center text-white py-3 rounded-bottom-3"
+                >
+                  <h3 class="mb-1 fs-25 text-white">Claire Chedd</h3>
+                  <h4 class="fw-bold text-white h5 px-lg-5 px-xl-0">
+                    BACK-END DEVELOPER
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Team -->
+
+      <!-- Start Contact  -->
+      <section class="contact-section my-5" id="contact-section">
+        <div class="container px-3" data-aos="fade-up" data-aos-duration="1000">
+          <div
+            class="titel dark-color mb-4 d-flex justify-content-center align-items-center py-5 text-center"
+          >
+            <h2 class="z-1 position-relative mb-0 fw-900">Contact Us.</h2>
+          </div>
+          <div class="row gy-3 px-lg-5">
+            <header class="col-lg-4">
+              <div
+                class="contact-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div
+                  class="contact-icon tr-500 mb-3 light-bg p-30 rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid tr-500 fs-3 fa-location-arrow"></i>
+                </div>
+                <h3 class="h6 fw-bold">Address</h3>
+                <p class="light-color text-center fs-15">
+                  6834 Hollywood Blvd-Los Angeles CA
+                </p>
+              </div>
+            </header>
+            <div class="col-lg-4">
+              <div
+                class="contact-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div
+                  class="contact-icon tr-500 mb-3 light-bg p-30 rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid tr-500 fs-3 fa-envelope"></i>
+                </div>
+                <h3 class="h6 fw-bold">Email</h3>
+                <p class="light-color fs-15">Support@website.com</p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="contact-card d-flex flex-column justify-content-center align-items-center"
+              >
+                <div
+                  class="contact-icon tr-500 mb-3 light-bg p-30 rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <i class="fa-solid tr-500 fs-3 fa-phone"></i>
+                </div>
+                <h3 class="h6 fw-bold">Phone</h3>
+                <p class="light-color fs-15">+20 010 2517 8918</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2 px-lg-5">
+            <form
+              action="#"
+              class="d-flex flex-column justify-content-start align-items-start mt-5"
+            >
+              <div class="inputs w-100 d-lg-flex gap-4">
+                <input
+                  placeholder="Name "
+                  type="text"
+                  class="rounded-1 light-bg border-0 mb-3 w-100 p-2"
+                  id="userName"
+                  aria-describedby="userNameHelp"
+                  required
+                />
+                <input
+                  placeholder="Email"
+                  type="email"
+                  class="rounded-1 light-bg border-0 mb-3 w-100 p-2"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  required
+                />
+              </div>
+              <textarea
+                placeholder="Message"
+                class="rounded-1 light-bg border-0 w-100 p-2"
+                id="message"
+              ></textarea>
+              <button
+                type="submit"
+                class="mt-3 tr-500 main-border text-white rounded-2 fs-13 dark-bg"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact  -->
+    </main>
+    <!-- End Main  -->
+
+    <!-- Start Footer -->
+    <footer class="footer px-md-5 py-4 text-center dark-bg">
+      <p class="mb-0 py-2 fs-13 light-color">
+        Copy Right 2024 &copy; By Mohamed Nagy All Rights Reserved
+      </p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- AOS Animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

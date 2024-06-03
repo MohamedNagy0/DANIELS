@@ -1,0 +1,483 @@
+/* Start Basic */
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth !important;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+  color: #323232 !important;
+}
+/* Variables => Colors & bg-colors */
+:root {
+  --dark-color: rgb(28, 28, 28);
+  --light-color: rgb(116, 129, 130);
+  --dark-bg: rgb(28, 28, 28);
+  --light-bg: #f7f7f7;
+}
+.dark-color {
+  color: var(--dark-color) !important;
+}
+.light-color {
+  color: var(--light-color) !important;
+}
+.dark-bg {
+  background-color: var(--dark-bg) !important;
+}
+.light-bg {
+  background-color: var(--light-bg) !important;
+}
+
+/* Transitions */
+.tr-350 {
+  transition: all 350ms !important;
+}
+.tr-500 {
+  transition: all 500ms !important;
+}
+/* Fons Size */
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 0.875rem;
+}
+.fs-15 {
+  font-size: 0.9375rem;
+}
+.fs-18 {
+  font-size: 1.125rem;
+}
+.fs-25 {
+  font-size: 1.5625rem;
+}
+.p-30 {
+  padding: 30px;
+}
+.main-border {
+  border: 1px solid var(--dark-color);
+}
+
+/* Font weight */
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+
+/*  Heading of all Sections */
+.titel h2 {
+  font-size: 2.5rem;
+  width: fit-content;
+}
+.titel h2::after {
+  content: "";
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: -1;
+}
+
+/* Lodaing Animaion */
+.lodaing {
+  z-index: 9999;
+  animation: lodaing 1s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+.lodaing div:nth-of-type(1),
+.lodaing div:nth-of-type(2) {
+  height: 50%;
+  opacity: 0;
+  animation: height-control 1s linear;
+}
+.spinner-border {
+  width: 50px;
+  height: 50px;
+  border: 10px solid;
+  border-color: var(--light-bg);
+  border-right-color: black;
+}
+/* End Basic */
+
+/* Start Nav */
+.menu-icon > div {
+  animation: bg-dark linear forwards;
+  animation-timeline: view(-1250px 2500px);
+  background-color: white;
+  width: 22px;
+  height: 2px;
+}
+@keyframes bg-dark {
+  100% {
+    background-color: var(--dark-color);
+  }
+}
+.navbar {
+  animation: nav-change linear forwards;
+  animation-timeline: view(-1250px 2500px);
+  position: absolute;
+  color: white;
+  padding-block: 30px;
+  background-color: transparent;
+}
+nav a {
+  color: inherit !important;
+}
+.nav-underline .nav-link::after,
+ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: width 500ms;
+  background-color: var(--dark-color);
+}
+.nav-underline .home-special .nav-link::after,
+ul li::after {
+  background-color: white;
+}
+.nav-underline .nav-link.active::after {
+  width: 100%;
+}
+/* End Nav */
+
+/* Start Header */
+header h1 {
+  width: fit-content;
+  font-size: 30px;
+}
+header h1 span {
+  width: 0;
+  margin-bottom: -15px;
+}
+header h1::after {
+  content: "";
+  height: 80%;
+  background-color: white;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+}
+header h1 span:nth-of-type(2) {
+  animation: route 12s infinite;
+}
+header h1 span:nth-of-type(3) {
+  animation: developer 12s infinite;
+}
+header h1 span:nth-of-type(4) {
+  animation: designer 12s infinite;
+}
+header h1 span:nth-of-type(5) {
+  animation: freelancer 12s infinite;
+}
+.home-section {
+  background-image: linear-gradient(#000a, #000a), url(../img/bg.jpg);
+  background-size: cover;
+  background-position: left top;
+}
+.home-caption p {
+  font-size: 3.125rem !important;
+}
+.social-links a {
+  font-size: 12px;
+}
+/* End Header */
+
+/* Start About */
+.about-section p:first-of-type {
+  letter-spacing: 2px;
+}
+
+.progress-chiled {
+  box-shadow: inset 0px 1px 16px -6px #0007;
+  height: 24px;
+}
+.chiled {
+  font-family: "Montserrat", sans-serif;
+  width: 0;
+  animation: control-width-95 linear forwards;
+  animation-timeline: view();
+  animation-range: 0 100px;
+}
+.sec {
+  animation-name: control-width-80;
+}
+.third {
+  animation-name: control-width-90;
+}
+.about-caption a:first-child:hover {
+  background-color: white !important;
+  color: var(--dark-color) !important;
+}
+.about-caption a:last-child:hover {
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+.about-img::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 80%;
+  height: 73%;
+  z-index: -1;
+  background-image: url(../img/dots.png);
+}
+/* End About */
+
+/* Start Services */
+.services-icon {
+  width: 70px;
+  height: 70px;
+}
+.services-card:hover .services-icon {
+  background-color: var(--dark-color) !important;
+}
+.services-card:hover i {
+  color: #fff !important;
+}
+/* End Services */
+
+/* Start Portfolio */
+.social-all-icons {
+  width: 30px;
+  height: 30px;
+  border-color: var(--dark-color) !important;
+  cursor: pointer;
+}
+.works-card .img-inner {
+  transform: translateY(8px);
+}
+.works-card .inner h3 {
+  transform: translateY(-15px);
+}
+.works-card .icons {
+  transform: translateY(15px);
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 350ms;
+}
+.social-all-icons:hover i {
+  color: var(--dark-color);
+}
+.social-all-icons:hover {
+  background-color: #fff !important;
+}
+.works-card h3 :hover .icons,
+.works-card:hover .inner h3 {
+  transform: translateY(0);
+}
+.works-card:hover .img-inner {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+
+/* End Portfolio */
+
+/* Start Testimonials */
+.testimonials-section {
+  padding-bottom: 8rem !important ;
+}
+.testimonials-section .carousel-inner {
+  max-width: 945px;
+}
+.testimonials-section img {
+  width: 90px;
+}
+.testimonials-section h4 {
+  color: rgb(136, 136, 136) !important;
+  font-family: Poppins, sans-serif !important;
+}
+.carousel-indicators .active {
+  background-color: #869791 !important;
+}
+.carousel-indicators button {
+  background-color: #d6d6d6 !important;
+}
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+}
+.carousel-indicators button:hover {
+  background-color: #869791 !important;
+  opacity: 1 !important;
+}
+/* End Testimonials */
+
+/* Start Team  */
+.team-section .card-caption {
+  background-color: #5b5b5b;
+}
+.team-section .social-all-icons {
+  width: 40px;
+  height: 40px;
+}
+.team-section .icons {
+  transition: transform 500ms, scale 500ms, opacity 500ms;
+  transform: rotateY(180deg);
+  scale: 0.5;
+}
+.team-section .team-card:hover .icons {
+  transform: rotateY(0);
+  scale: 1;
+  opacity: 1 !important;
+}
+.team-section .img:hover img {
+  scale: 1.2;
+}
+/* End Team  */
+
+/* Start Contact */
+.contact-section {
+  margin-bottom: 6rem !important;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+}
+form textarea {
+  height: 160px;
+  resize: vertical;
+  max-height: 200px;
+  min-height: 100px;
+}
+form button {
+  padding: 10px 40px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 14px !important;
+  color: var(--light-color);
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+form button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.contact-card:hover i {
+  color: white;
+}
+.contact-card:hover .contact-icon {
+  background-color: var(--dark-color) !important;
+}
+/* End Contact */
+
+/* Start Animtion */
+@keyframes nav-change {
+  100% {
+    position: fixed;
+    background-color: white;
+    color: var(--dark-color);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding-block: 15px;
+  }
+}
+
+@keyframes lodaing {
+  0% {
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes height-control {
+  to {
+    height: 0;
+    opacity: 1;
+  }
+}
+@keyframes route {
+  0%,
+  25% {
+    width: 0;
+  }
+  10%,
+  20% {
+    width: 90px;
+  }
+}
+@keyframes developer {
+  25%,
+  50% {
+    width: 0;
+  }
+  35%,
+  45% {
+    width: 155px;
+  }
+}
+@keyframes designer {
+  0%,
+  15%,
+  25%,
+  35%,
+  40%,
+  50%,
+  75% {
+    width: 0;
+  }
+  60%,
+  70% {
+    width: 137px;
+  }
+}
+@keyframes freelancer {
+  0%,
+  15%,
+  25%,
+  35%,
+  40%,
+  50%,
+  75%,
+  100% {
+    width: 0;
+  }
+  85%,
+  95% {
+    width: 160px;
+  }
+}
+@keyframes control-width-95 {
+  to {
+    width: 95%;
+  }
+}
+@keyframes control-width-80 {
+  to {
+    width: 80%;
+  }
+}
+@keyframes control-width-90 {
+  to {
+    width: 90%;
+  }
+}
+/* End Animtion */
